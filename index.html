@@ -22,8 +22,62 @@
 </style>
     <title>Job Interview</title>
 </head>
-<body>
-    <h1 class="text-red-400">Hello world
+<body class="bg-gray-200">
+
+<div class="max-w-4xl mx-auto p-8">
+    <h1 class="text-3xl font-semibold text-gray-800 mb-8">
+        Job Application Dashboard
     </h1>
+    <div class="grid grid-cols-3 gap-4 mb-10">
+
+        <div class="bg-white border border-gray-400 p-6 rounded-[20px]">
+            <p class="text-gray-500 text-sm">Total Jobs</p>
+            <p id="totalJobs" class="text-3xl font-bold text-gray-800 mt-2">0</p>
+        </div>
+
+        <div class="bg-blue-50 border border-blue-200 p-6 rounded-[20px]">
+            <p class="text-blue-600 text-sm">Interview</p>
+            <p id="interviewJobs" class="text-3xl font-bold text-blue-700 mt-2">0</p>
+        </div>
+
+        <div class="bg-red-50 border border-red-200 p-6 rounded-[20px]">
+            <p class="text-red-500 text-sm">Rejected</p>
+            <p id="rejectedJobs" class="text-3xl font-bold text-red-500 mt-2">0</p>
+        </div>
+
+    </div>
+
+    <div class="flex justify-between items-center mb-4">
+        <h2 class="text-2xl font-semibold text-gray-800">
+            Available Jobs
+        </h2>
+        <p class="text-gray-500">
+            <span id="availableCount">0</span> Jobs
+        </p>
+    </div>
+
+    <div class="flex gap-3 mb-8">
+        <button id="allTab" class="px-4 py-2 text-sm rounded-md bg-white text-gray-800 hover:bg-gray-900 hover:cursor-pointer hover:text-yellow-50">
+            All
+        </button>
+
+        <button id="interviewTab" class="px-4 py-2 text-sm rounded-md bg-gray-800 text-white hover:bg-green-500 hover:cursor-pointer hover:text-white">
+            Interview
+        </button>
+
+        <button id="rejectedTab"
+            class="px-4 py-2 text-sm rounded-md bg-gray-800 text-white hover:bg-red-500 hover:cursor-pointer hover:text-white">
+            Rejected
+        </button>
+</div>
+
+    <div id="jobContainer"
+        class="grid grid-cols-1 gap-6">
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
 </body>
 </html>
