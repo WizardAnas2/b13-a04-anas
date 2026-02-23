@@ -62,7 +62,7 @@ function renderJobs() {
             card.className = "bg-white p-10 rounded-[10px]";
 
             card.innerHTML =
-                "<h3 class='text-[24px] font-bold text-gray-600'>" + jobs[i].company+ "</h3>"+
+                "<h3 class='text-2xl font-bold text-gray-600'>" + jobs[i].company+ "</h3>"+
                 "<p>" + jobs[i].position + "</p>"+
                 "<p>"+ jobs[i].location + "</p>"+
                 "<p>"+ jobs[i].type + "</p>"+
