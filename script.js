@@ -74,7 +74,7 @@ function renderJobs() {
 
                 //there is an apology that i couldn't make that delete button properly, please don't click the icon, click the button's empty space to delete the section 
                 
-                "<button id='deleteBtn" + jobs[i].id + "' class='bg-gray-500 text-white mx-50 px-5 py-2 rounded hover:cursor-pointer hover:bg-red-500'>" +
+                "<button id='deleteBtn" + jobs[i].id + "' class='bg-gray-500 text-white lg:mx-50 px-5 py-2 rounded hover:cursor-pointer hover:bg-red-500'>" +
 "<i class='fa-solid fa-trash-can m-1'></i>" +
 "</button>" +
 "</div>";
@@ -120,7 +120,7 @@ function addButtonEvents(){
 
         if(deleteBtn){
             deleteBtn.addEventListener("click",function(e){
-                let id = e.target.id.replace("deleteBtn", "");
+                let id= e.target.id.replace("deleteBtn", "");
                 deleteJob(parseInt(id));
             });
         }
